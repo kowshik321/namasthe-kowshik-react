@@ -1,4 +1,8 @@
-    // JavaScript Code :  Manipulating the HTML DOM using Javscript
+ import React from "react";
+
+ import ReactDOM from "react-dom/client";
+ 
+ // JavaScript Code :  Manipulating the HTML DOM using Javscript
 /*
 const heading = document.createElement("h1");
 heading.innerHTML = "Hello World from JavaScript!"
@@ -167,7 +171,7 @@ const child1 = React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I am an h1 tag"),
     React.createElement("h2", {}, "I am an h2 tag"),
   ]);
-  const child2 = React.createElement("div", { id: "child2" }, [
+  const child2 = React.createElement("div", { id: "child2"  }, [
     React.createElement("h1", {}, "I am an h1 tag"),
     React.createElement("h2", {}, "I am an h2 tag"),
   ]);
@@ -175,13 +179,13 @@ const child1 = React.createElement("div", { id: "child1" }, [
   const parent = React.createElement(
     "div",
     {
-      id: "parent",
+      id1: "parent",
       style: {
         background: "skyblue",
       },
     },
-    [child1, child2]
+    [child1 , child2]
   );
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(parent);
+  root.render(parent ,key="id");
